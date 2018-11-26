@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="369.0" prefWidth="389.0" style="-fx-background-color: #fff;" stylesheets="@../style/StyleSheet.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AppointmentMainController">
+   <children>
+      <Button id="signinbtn" layoutX="91.0" layoutY="78.0" onAction="#bookAction" prefHeight="87.0" prefWidth="207.0" style="-fx-background-color: #00c0ff; -fx-background-radius: 0px;" text="BOOK APPOINTMENT" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button id="signupbtn" layoutX="91.0" layoutY="204.0" onAction="#cancelAction" prefHeight="87.0" prefWidth="207.0" style="-fx-background-color: #03e486; -fx-background-radius: 0px;" text="CANCEL APPOINTMENTS" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="586.0" prefWidth="389.0" stylesheets="@../style/StyleSheet.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SigninController">
+   <children>
+      <Pane id="paneSign" layoutX="44.0" layoutY="65.0" prefHeight="457.0" prefWidth="301.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button id="signinbtn" fx:id="signinBTN" layoutX="96.0" layoutY="340.0" onAction="#signinAction" prefHeight="37.0" prefWidth="207.0" style="-fx-background-color: #00c0ff; -fx-background-radius: 50px;" text="SIGHIN" textFill="WHITE" />
+            <Button id="signupbtn" fx:id="signupBTN" layoutX="96.0" layoutY="396.0" onAction="#signupAction" prefHeight="37.0" prefWidth="207.0" style="-fx-background-color: #00c0ff; -fx-background-radius: 50px;" text="SIGNUP" textFill="WHITE" />
+            <ImageView fx:id="logoImage" fitHeight="72.0" fitWidth="68.0" layoutX="170.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../src/hospitallogo.png" />
+               </image>
+            </ImageView>
+            <TextField id="userNameFL" fx:id="usernameTF" layoutX="102.0" layoutY="206.0" maxWidth="206.0" minWidth="192.0" prefHeight="37.0" prefWidth="206.0" promptText="USER NAME" style="-fx-background-color: #ffffff00; -fx-border-color: #00c0ff; -fx-border-radius: 50px;">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </TextField>
+            <PasswordField id="passwordFL" fx:id="passwordTF" layoutX="101.0" layoutY="268.0" maxWidth="210.0" minWidth="192.0" prefHeight="37.0" prefWidth="207.0" promptText="PASSWORD" style="-fx-background-color: #ffffff00; -fx-border-color: #00c0ff; -fx-border-radius: 50px;">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </PasswordField>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
