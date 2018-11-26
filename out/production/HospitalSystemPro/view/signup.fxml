@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane2" prefHeight="449.0" prefWidth="646.0" style="-fx-background-color: #09e2a7;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.signupFXMLConroller">
+   <children>
+      <Pane layoutX="94.0" layoutY="60.0" prefHeight="329.0" prefWidth="459.0" style="-fx-background-color: #fff;">
+         <children>
+            <TextField id="firtN" fx:id="firstName" layoutX="65.0" layoutY="41.0" promptText="First Name" style="-fx-background-color: #00000000; -fx-border-color: #e2e2e2;">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            <TextField fx:id="lastName" layoutX="256.0" layoutY="41.0" promptText="Last Name" style="-fx-background-color: #00000000; -fx-border-color: #e2e2e2;">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            <TextField fx:id="userName" layoutX="63.0" layoutY="129.0" maxWidth="366.0" minWidth="317.0" prefHeight="36.0" prefWidth="366.0" promptText="User Name" style="-fx-background-color: #00000000; -fx-border-color: #e2e2e2;">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            <PasswordField fx:id="password" layoutX="63.0" layoutY="196.0" maxWidth="366.0" minWidth="317.0" prefHeight="36.0" prefWidth="366.0" promptText="Password" style="-fx-background-color: #00000000; -fx-border-color: #e2e2e2;">
+               <font>
+                  <Font size="14.0" />
+               </font></PasswordField>
+            <Button layoutX="303.0" layoutY="260.0" onAction="#regist" prefHeight="41.0" prefWidth="115.0" style="-fx-background-color: #09e2a7;" text="Register" textFill="WHITE" />
+            <Button layoutX="172.0" layoutY="260.0" onAction="#cancelAction" prefHeight="41.0" prefWidth="115.0" style="-fx-background-color: #09e2a7;" text="Cancel" textFill="WHITE" />
+         </children>
+         <effect>
+            <DropShadow color="#838383" />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+
+<AnchorPane id="dentalAnchorPane" prefHeight="608.0" prefWidth="685.0" style="-fx-background-color: #fff;" stylesheets="@../style/StyleSheet.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AppointmentsController">
+   <children>
+      <JFXTreeTableView fx:id="treeTableView" layoutX="288.0" layoutY="189.0" prefHeight="486.0" prefWidth="798.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="189.0">
+         <effect>
+            <DropShadow color="#e8e8e8" />
+         </effect>
+         <padding>
+            <Insets left="7.0" />
+         </padding>
+         <columnResizePolicy>
+            <TreeTableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+         <columns>
+            <TreeTableColumn fx:id="nameCol" prefWidth="75.0" text="Doctor Name" />
+            <TreeTableColumn fx:id="dateCol" prefWidth="75.0" text="Date" />
+            <TreeTableColumn fx:id="treamentCol" prefWidth="75.0" text="Treatment" />
+         </columns></JFXTreeTableView>
+      <Button id="InsertAndDeleteAndUpdateBtn" layoutX="394.0" layoutY="109.0" onAction="#addAppointment" prefHeight="42.0" prefWidth="246.0" style="-fx-background-color: #00b7f3;" text="Submit" textFill="WHITE" />
+      <ComboBox fx:id="treatmentCombo" layoutX="45.0" layoutY="109.0" prefHeight="42.0" prefWidth="246.0" promptText="Treatment" style="-fx-background-color: #fff;" />
+      <DatePicker fx:id="datePicker" layoutX="394.0" layoutY="39.0" prefHeight="39.0" prefWidth="246.0" promptText="Date" showWeekNumbers="true" style="-fx-background-color: #fff; -fx-border-color: #e2e2e2;" />
+      <TextField fx:id="nameTF" layoutX="45.0" layoutY="38.0" prefHeight="42.0" prefWidth="246.0" promptText="Doctor Name" style="-fx-background-color: #fff; -fx-border-color: #e2e2e2;" />
+   </children>
+</AnchorPane>

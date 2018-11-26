@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="670.0" prefWidth="1250.0" style="-fx-background-color: #fff;" stylesheets="@../style/StyleSheet.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.adminMainWindowController">
+   <children>
+      <Pane id="homePane" fx:id="backgroundPane" layoutY="7.0" prefHeight="368.0" prefWidth="1007.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="profile" fitHeight="35.0" fitWidth="36.0" layoutX="41.0" layoutY="29.0" opacity="0.55" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../src/setting.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <GridPane layoutX="212.0" layoutY="368.0" opacity="0.8" prefHeight="432.0" prefWidth="793.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="212.0" AnchorPane.rightAnchor="212.0" AnchorPane.topAnchor="215.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Pane id="hhh" fx:id="ss" prefHeight="247.0" prefWidth="386.0" style="-fx-background-color: #00c0ff;">
+               
+            
+             <children>
+               <Button id="labels" fx:id="zx" alignment="BOTTOM_CENTER" layoutY="-1.0" onAction="#OpenClinicWindow0" prefHeight="152.0" prefWidth="276.0" style="-fx-background-color: #00c0ff; -fx-background-radius: 0px;" text="Internal Medicine" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="20.0" />
+                     </padding>
+                  </Button>
+                  <ImageView fitHeight="41.0" fitWidth="51.0" layoutX="104.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@../src/logo_sersanti.png" />
+                     </image>
+                  </ImageView>
+             </children>
+            </Pane>
+            <Pane prefHeight="323.0" prefWidth="416.0" style="-fx-background-color: #00c0ff;" GridPane.columnIndex="1">
+               <children>
+                  <Button id="labels" alignment="BOTTOM_CENTER" layoutY="-1.0" onAction="#OpenClinicWindow1" prefHeight="152.0" prefWidth="276.0" style="-fx-background-color: #00c0ff; -fx-background-radius: 0px;" text="Physiotherapy" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="20.0" />
+                     </padding>
+                  </Button>
+                  <ImageView fitHeight="52.0" fitWidth="51.0" layoutX="106.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../src/gegrgsds.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane prefHeight="234.0" prefWidth="361.0" style="-fx-background-color: #00c0ff;" GridPane.columnIndex="2">
+               <children>
+                  <Button id="labels" alignment="BOTTOM_CENTER" layoutX="1.0" layoutY="-1.0" onAction="#OpenClinicWindow2" prefHeight="152.0" prefWidth="275.0" style="-fx-background-color: #00c0ff; -fx-background-radius: 0px;" text="Neurology" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="20.0" />
+                     </padding>
+                  </Button>
+                  <ImageView fitHeight="52.0" fitWidth="43.0" layoutX="117.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../src/htfgh.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane prefHeight="210.0" prefWidth="353.0" style="-fx-background-color: #00c0ff;" GridPane.rowIndex="1">
+               <children>
+                  <Button id="labels" alignment="BOTTOM_CENTER" layoutY="-1.0" onAction="#OpenClinicWindow3" prefHeight="152.0" prefWidth="276.0" style="-fx-background-color: #00c0ff; -fx-background-radius: 0px;" text="Cardiology Surgery" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="20.0" />
+                     </padding>
+                  </Button>
+                  <ImageView fitHeight="52.0" fitWidth="51.0" layoutX="104.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../src/gdfgnh.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane prefHeight="193.0" prefWidth="314.0" style="-fx-background-color: #00c0ff;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <Button id="labels" alignment="BOTTOM_CENTER" layoutX="-1.0" onAction="#OpenClinicWindow4" prefHeight="152.0" prefWidth="276.0" style="-fx-background-color: #00c0ff; -fx-background-radius: 0px;" text="Ear, Nose and Throat" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="20.0" />
+                     </padding>
+                  </Button>
+                  <ImageView fitHeight="46.0" fitWidth="41.0" layoutX="109.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../src/fdddd.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane prefHeight="204.0" prefWidth="320.0" style="-fx-background-color: #00c0ff;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <children>
+                  <Button id="labels" alignment="BOTTOM_CENTER" layoutX="-1.0" layoutY="-1.0" onAction="#OpenClinicWindow5" prefHeight="152.0" prefWidth="276.0" style="-fx-background-color: #00c0ff; -fx-background-radius: 0px;" text="orthopedics" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="20.0" />
+                     </padding>
+                  </Button>
+                  <ImageView fitHeight="41.0" fitWidth="41.0" layoutX="117.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../src/200_78597_4546_thumbnail.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane prefHeight="188.0" prefWidth="304.0" style="-fx-background-color: #00c0ff;" GridPane.rowIndex="2">
+               <children>
+                  <Button id="labels" alignment="BOTTOM_CENTER" layoutX="-1.0" onAction="#OpenClinicWindow6" prefHeight="151.0" prefWidth="276.0" style="-fx-background-color: #00c0ff; -fx-background-radius: 0px;" text="Dental" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="20.0" />
+                     </padding>
+                  </Button>
+                  <ImageView fitHeight="41.0" fitWidth="55.0" layoutX="108.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../src/fedfg.png" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+            <Pane prefHeight="194.0" prefWidth="307.0" style="-fx-background-color: #00c0ff;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <Button id="labels" alignment="BOTTOM_CENTER" layoutX="-2.0" onAction="#OpenClinicWindow7" prefHeight="151.0" prefWidth="276.0" style="-fx-background-color: #00c0ff; -fx-background-radius: 0px;" text="Dermatology" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="20.0" />
+                     </padding>
+                  </Button>
+                  <ImageView fitHeight="38.0" fitWidth="41.0" layoutX="110.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../src/bgnn.png" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+            <Pane prefHeight="186.0" prefWidth="322.0" style="-fx-background-color: #00c0ff;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <children>
+                  <Button id="labels" alignment="BOTTOM_CENTER" layoutX="-1.0" layoutY="-3.0" onAction="#OpenClinicWindow8" prefHeight="158.0" prefWidth="276.0" style="-fx-background-color: #00c0ff; -fx-background-radius: 0px;" text="Ophthalmology" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="20.0" />
+                     </padding>
+                  </Button>
+                  <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="119.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../src/NaturopathicMedi.png" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
